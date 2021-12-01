@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mise en page de type SPA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="assets/img/logo.jpg" alt="Logo" onerror="this.src = 'assets/img/no-img.png'">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bienvenue sur mon site !</h1>
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                    <a href="http://dwaps.fr/">
+                        <div class="slide">
+                            <h1 class="slide-name">DWAPS - FORMATION</h1>
+                        </div>
+                    </a>
+                    <div class="slide">
+                        <h1 class="slide-name">Senecio Moreau</h1>
+                    </div>
+                    <div class="slide">
+                        <h1 class="slide-name">BAHCELOR CSI</h1>
+                    </div>
+                    <div class="slide">
+                        <h1 class="slide-name">OXITIA</h1>
+                        <p>Producteur de solutions digitales</p>
+                    </div>
+                    <div class="slide">
+                        <h1 class="slide-name">😈</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="presentation">
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel repellat, dolores minus corrupti sequi error commodi, dicta ipsam, deleniti omnis et ipsum perferendis adipisci. Atque ea quo eos sapiente.
+            </p>
+        </section>
+        <section id="services">
+            <h2>Nos prestations</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolores praesentium quod, corporis nemo molestiae architecto, cumque ea eum culpa blanditiis fuga necessitatibus corrupti tempora nulla ex dolor quas facilis.
+            </p><br>
+            <div class="containerCards">
+                <a href="https://www.linkedin.com/in/senecio-moreau/">
+                    <div class="cards">
+                        <h2>Sen</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolores praesentium quod, corporis nemo molestiae architecto, cumque ea eum culpa blanditiis fuga necessitatibus corrupti tempora nulla ex dolor quas facilis.</p>
+                    </div>
+                </a>
+                <a href="https://www.wikihow.com/Become-Zen">
+                    <div class="cards">
+                        <h2>Zen</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolores praesentium quod, corporis nemo molestiae architecto, cumque ea eum culpa blanditiis fuga necessitatibus corrupti tempora nulla ex dolor quas facilis.</p>
+                    </div>
+                </a>
+                <a href="https://www.montblanc.com/fr-fr/rollerballs_cod6630340699128355.html">
+                    <div class="cards">
+                        <h2>Pen</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolores praesentium quod, corporis nemo molestiae architecto, cumque ea eum culpa blanditiis fuga necessitatibus corrupti tempora nulla ex dolor quas facilis.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Nous contacter</h2>
+            <form action="#" method="GET">
+                <fieldset>
+                    <legend>Informations</legend>
+                    <div class="civilites">Civilités:
+                        <label>Monsieur: <input type="radio" name="civ" checked value="mr"></label>
+                        <label>Madame: <input type="radio" name="civ" value="mme"></label>
+                    </div>
+                    <div>
+                        <label for="lastname">Nom:</label>
+                        <input type="text" id="lastname">
+                    </div>
+                    <div>
+                        <label for="fistname">Prénom:</label>
+                        <input type="text" id="firstname">
+                    </div>
+                </fieldset>
+                <fieldset id="fieldsetMess">
+                    <legend>Message</legend>
+                    <label>Sujet du message: <input type="text"></label>
+                    <label id="labelMess">Message: <textarea rows="5" cols="20"></textarea></label>
+                </fieldset>
+                <button type="submit">Envoyer</button>
+                <button type="reset">Effacer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; MOREAU Senecio - 2021</p>
+    </footer>
+</body>
+
+</html>

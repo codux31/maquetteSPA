@@ -1,0 +1,76 @@
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.slide-wrapper {
+    width: 2912px;
+    -webkit-animation: slide 15s ease infinite;
+}
+
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slide:nth-child(1) {
+    background-image: url("../assets/img/bg_dwaps.jpg");
+    background-position: center;
+}
+
+.slide:nth-child(2) {
+    background-image: url("https://www.lifeofpix.com/wp-content/uploads/2018/04/3-2-1600x2400.jpg");
+    background-position: center;
+}
+
+.slide:nth-child(3) {
+    background-image: url("https://www.lifeofpix.com/wp-content/uploads/2021/08/nar13-1600x1067.jpg");
+    background-position: center;
+}
+
+.slide:nth-child(4) {
+    background-image: url("https://www.lifeofpix.com/wp-content/uploads/2021/10/IMG_2187-1600x2400.jpg");
+    background-position: center;
+}
+
+.slide-name {
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+}
+
+@-webkit-keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+    30% {
+        margin-left: -728px;
+    }
+    50% {
+        margin-left: -728px;
+    }
+    60% {
+        margin-left: -1456px;
+    }
+    70% {
+        margin-left: -1456px;
+    }
+    80% {
+        margin-left: -2184px;
+    }
+    90% {
+        margin-left: -2184px;
+    }
+}
